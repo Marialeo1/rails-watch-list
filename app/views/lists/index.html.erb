@@ -2,3 +2,8 @@
 <p><%= link_to list.name, list_path(list)%></p>
 <% end  %></div>
 <%= link_to "create your list ", new_list_path%>
+
+
+<%= cl_image_tag("san_francisco.jpg",
+      width: 400, height: 300, crop: :fill) %>
+
