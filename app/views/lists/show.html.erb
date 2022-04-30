@@ -6,5 +6,8 @@
   <% end %>
   </ul>
 
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+
+
 <%= link_to "create a bookmark", new_list_bookmark_path(@list), class: "btn btn-primary" %>
 <%= link_to 'Back to list', lists_path, class: "btn btn-primary" %>
